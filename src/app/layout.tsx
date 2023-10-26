@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Titillium_Web } from 'next/font/google';
 import './globals.css';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
-const inter = Inter({ subsets: ['latin'] });
+const titillium = Titillium_Web({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '600', '900'],
+});
 
 export const metadata: Metadata = {
   title: 'maj.dev',
@@ -15,8 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+      <body className={titillium.className}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
