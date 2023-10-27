@@ -5,11 +5,10 @@ export const Hero = () => {
   return (
     <SectionWrapper id="About">
       <div className="flex flex-col items-center md:flex-row gap-4 text-center md:text-left">
-        <div className="w-24 h-24 relative rounded-xl overflow-hidden">
+        <div className="w-24 h-24 rounded-xl overflow-hidden">
           <Image
             src={hero_img}
             alt="Maj's Profile Picture"
-            fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             placeholder="blur"
             loading="lazy"
