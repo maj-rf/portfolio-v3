@@ -1,7 +1,7 @@
 import { Header } from '@/components/Header/Header';
 import { Hero } from '@/components/Hero';
 import { Sidebar } from '@/components/Sidebar/Sidebar';
-import { Button } from '@/components/ui/button';
+import { TechStack } from '@/components/TechStack';
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <Sidebar />
       <Hero />
-      <section id="Tech Stack" className="h-screen bg-red-200"></section>
+      <TechStack />
       <section id="Projects" className="h-screen bg-emerald-200"></section>
     </div>
   );
