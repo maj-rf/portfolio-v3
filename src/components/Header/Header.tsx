@@ -1,4 +1,4 @@
-import { Github } from 'lucide-react';
+import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import { ThemeToggle } from './ThemeToggle';
 export const Header = () => {
   return (
@@ -10,7 +10,7 @@ export const Header = () => {
             <ThemeToggle />
           </li>
           <li>
-            <Github />
+            <GitHubLogoIcon />
           </li>
         </ul>
       </div>

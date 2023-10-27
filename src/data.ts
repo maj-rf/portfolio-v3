@@ -16,6 +16,6 @@ export const backend: Tech[] = [
   { name: 'Firebase', src: '/assets/firebase.svg' },
   { name: 'Express', src: '/assets/express.svg' },
   { name: 'MongoDB', src: '/assets/mongodb.svg' },
-
   { name: 'MySQL', src: '/assets/mysql.svg' },
+  { name: 'Prisma', src: '/assets/prisma.svg' },
 ];

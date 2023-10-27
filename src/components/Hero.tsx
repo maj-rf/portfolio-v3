@@ -1,16 +1,20 @@
 import Image from 'next/image';
+import hero_img from '../assets/hero_img.jpg';
 import { SectionWrapper } from './common/SectionWrapper';
 export const Hero = () => {
   return (
     <SectionWrapper id="About">
       <div className="flex flex-col items-center md:flex-row gap-4 text-center md:text-left">
-        <Image
-          src="/assets/hero_img.jpg"
-          alt="Maj's Profile Picture"
-          width="100"
-          height="100"
-          className="rounded-xl"
-        />
+        <div className="w-24 h-24 relative rounded-xl overflow-hidden">
+          <Image
+            src={hero_img}
+            alt="Maj's Profile Picture"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            placeholder="blur"
+            loading="lazy"
+          />
+        </div>
         <div>
           <p className="text-lg font-semibold">Ralph Majed R. Fermin</p>
           <p>Full Stack Developer, Pokemon Trainer</p>
@@ -20,7 +24,7 @@ export const Hero = () => {
         </div>
       </div>
       <hr></hr>
-      <div className="text-muted-foreground">
+      <div className="text-muted-foreground flex flex-col gap-4">
         <h1 className="text-xl text-primary">
           I build <s className="decoration-1">and occasionally break</s> stuff.
         </h1>

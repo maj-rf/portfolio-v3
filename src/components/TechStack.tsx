@@ -6,9 +6,12 @@ export const TechStack = () => {
     <SectionWrapper id="Tech Stack">
       <h2 className="font-semibold text-2xl">Tech Stack</h2>
       <div className="space-y-4">
-        <article className="flex flex-wrap gap-4 justify-between">
+        <article className="grid grid-cols-3 sm:grid-cols-6 gap-4">
           {frontend.map((tech) => (
-            <div key={tech.name} className="flex flex-col gap-2">
+            <div
+              key={tech.name}
+              className="flex flex-col gap-2 items-center justify-center"
+            >
               <Image
                 src={tech.src}
                 alt={tech.name + ' icon'}
@@ -19,9 +22,12 @@ export const TechStack = () => {
             </div>
           ))}
         </article>
-        <article className="flex flex-wrap gap-4 justify-between">
+        <article className="grid grid-cols-3 sm:grid-cols-6 gap-4">
           {backend.map((tech) => (
-            <div key={tech.name} className="flex flex-col gap-2">
+            <div
+              key={tech.name}
+              className="flex flex-col gap-2 items-center justify-center"
+            >
               <Image
                 src={tech.src}
                 alt={tech.name + ' icon'}
