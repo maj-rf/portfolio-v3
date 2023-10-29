@@ -35,7 +35,7 @@ export const projects: Project[] = [
   {
     title: 'Muni',
     description:
-      'Full Stack blog web app: a sleek platform that empowers writers to create and readers to explore. Share what you think in the platform.',
+      'Full Stack Blogging Web App. Share your thoughts in the platform. Powered by TinyMCE editor.',
     img: muni,
     tags: ['TypeScript', 'React', 'TanStack Query', 'Express', 'MongoDB'],
     live: 'https://muni-api.onrender.com/',
@@ -44,7 +44,7 @@ export const projects: Project[] = [
   {
     title: 'Hyphy',
     description:
-      'Frontend E-Commerce Site inspired by Nuphy that captures the online shopping experience.',
+      'Simple Frontend E-Commerce Site inspired by Nuphy that captures the online shopping experience.',
     img: hyphy,
     tags: ['TypeScript', 'React', 'React-router'],
     live: 'https://hyphy.vercel.app/',
@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     title: 'Pretendster',
     description:
-      'A Social Media Web App inspired by Friendster, Facebook, and Twitter',
+      'Social Media Web App combining some elements of Friendster, Facebook, and Twitter. Powered by Cloudinary for image storage.',
     img: pretendster,
     tags: [
       'TypeScript',
