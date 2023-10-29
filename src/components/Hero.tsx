@@ -25,7 +25,9 @@ export const Hero = () => {
       <hr></hr>
       <div className="text-muted-foreground flex flex-col gap-4">
         <h1 className="text-xl text-primary">
-          I build <s className="decoration-1">and occasionally break</s> stuff.
+          I build{' '}
+          <span className="strike animate-strike">and occasionally break</span>{' '}
+          stuff.
         </h1>
         <p>
           I’m a Software Developer based in Philippines, building full-stack web
