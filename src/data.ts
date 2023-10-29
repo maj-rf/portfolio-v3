@@ -1,7 +1,80 @@
+import { StaticImageData } from 'next/image';
+import engage from './assets/p_fengage.png';
+import hyphy from './assets/p_hyphy.png';
+import muni from './assets/p_muni.png';
+import pretendster from './assets/p_pretendster.png';
+
 export type Tech = {
   name: string;
   src: string;
 };
+
+export type Tag =
+  | 'TypeScript'
+  | 'React'
+  | 'NextJS'
+  | 'Node.JS'
+  | 'Express'
+  | 'MongoDB'
+  | 'MySQL'
+  | 'Prisma'
+  | 'TanStack Query'
+  | 'TanStack Table'
+  | 'React-router';
+
+export type Project = {
+  title: string;
+  description: string;
+  img: StaticImageData;
+  tags: Tag[];
+  live?: string;
+  repo: string;
+};
+
+export const projects: Project[] = [
+  {
+    title: 'Muni',
+    description:
+      'Full Stack blog web app: a sleek platform that empowers writers to create and readers to explore. Share what you think in the platform.',
+    img: muni,
+    tags: ['TypeScript', 'React', 'TanStack Query', 'Express', 'MongoDB'],
+    live: 'https://muni-api.onrender.com/',
+    repo: 'https://github.com/bananabread08/myblog-client',
+  },
+  {
+    title: 'Hyphy',
+    description:
+      'Frontend E-Commerce Site inspired by Nuphy that captures the online shopping experience.',
+    img: hyphy,
+    tags: ['TypeScript', 'React', 'React-router'],
+    live: 'https://hyphy.vercel.app/',
+    repo: 'https://github.com/bananabread08/hyphy',
+  },
+  {
+    title: 'Fengage Calc',
+    description:
+      'Compute your Stat Growths! Stat Calculator for the Nintendo Switch Game, Fire Emblem Engage',
+    img: engage,
+    tags: ['TypeScript', 'React', 'NextJS', 'TanStack Table'],
+    live: 'https://fengage-calc.vercel.app/',
+    repo: 'https://github.com/bananabread08/fengage-calc',
+  },
+  {
+    title: 'Pretendster',
+    description:
+      'A Social Media Web App inspired by Friendster, Facebook, and Twitter',
+    img: pretendster,
+    tags: [
+      'TypeScript',
+      'React',
+      'React-router',
+      'Express',
+      'MongoDB',
+      'Prisma',
+    ],
+    repo: 'https://github.com/bananabread08/pretendster',
+  },
+];
 
 export const frontend: Tech[] = [
   { name: 'JavaScript', src: '/assets/javascript.svg' },
