@@ -1,3 +1,4 @@
+import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header/Header';
 import { Hero } from '@/components/Hero';
 import { Projects } from '@/components/Projects';
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <TechStack />
       <Projects />
+      <Footer />
     </div>
   );
 }
