@@ -72,6 +72,7 @@ export const projects: Project[] = [
       'MongoDB',
       'Prisma',
     ],
+    live: 'https://pretendster-mono.onrender.com/',
     repo: 'https://github.com/bananabread08/pretendster',
   },
 ];

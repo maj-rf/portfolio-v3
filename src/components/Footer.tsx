@@ -1,10 +1,12 @@
 import React from 'react';
-import { SectionWrapper } from './common/SectionWrapper';
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
   EnvelopeClosedIcon,
 } from '@radix-ui/react-icons';
+
+const thisYear = new Date().getFullYear();
+
 export const Footer = () => {
   return (
     <footer>
@@ -34,7 +36,7 @@ export const Footer = () => {
               <LinkedInLogoIcon width={25} height={25} />
             </a>
           </div>
-          <p className="text-sm">© 2023 bananabread08. All rights reserved.</p>
+          <p className="text-sm flex items-center">{`© ${thisYear}  bananabread08. All rights reserved.`}</p>
         </div>
       </div>
     </footer>
