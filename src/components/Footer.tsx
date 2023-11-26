@@ -17,7 +17,6 @@ export const Footer = () => {
               href="mailto:rmkfermin@gmail.com"
               target="_blank"
               title="Send email to bananabread08"
-              className="animate-pulse"
             >
               <EnvelopeClosedIcon width={25} height={25} />
             </a>

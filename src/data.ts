@@ -33,6 +33,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'Pretendster',
+    description:
+      'Social Media Web App combining some elements of Friendster, Facebook, and Twitter. Powered by Cloudinary for image storage.',
+    img: pretendster,
+    tags: [
+      'TypeScript',
+      'React',
+      'React-router',
+      'Express',
+      'MongoDB',
+      'Prisma',
+    ],
+    live: 'https://pretendster-mono.onrender.com/',
+    repo: 'https://github.com/bananabread08/pretendster',
+  },
+  {
     title: 'Muni',
     description:
       'Full Stack Blogging Web App. Share your thoughts in the platform. Powered by TinyMCE editor.',
@@ -58,22 +74,6 @@ export const projects: Project[] = [
     tags: ['TypeScript', 'React', 'NextJS', 'TanStack Table'],
     live: 'https://fengage-calc.vercel.app/',
     repo: 'https://github.com/bananabread08/fengage-calc',
-  },
-  {
-    title: 'Pretendster',
-    description:
-      'Social Media Web App combining some elements of Friendster, Facebook, and Twitter. Powered by Cloudinary for image storage.',
-    img: pretendster,
-    tags: [
-      'TypeScript',
-      'React',
-      'React-router',
-      'Express',
-      'MongoDB',
-      'Prisma',
-    ],
-    live: 'https://pretendster-mono.onrender.com/',
-    repo: 'https://github.com/bananabread08/pretendster',
   },
 ];
 

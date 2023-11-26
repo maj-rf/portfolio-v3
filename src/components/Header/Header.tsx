@@ -10,7 +10,13 @@ export const Header = () => {
             <ThemeToggle />
           </li>
           <li>
-            <GitHubLogoIcon />
+            <a
+              href="https://github.com/bananabread08"
+              target="_blank"
+              title="Github profile of bananabread08 "
+            >
+              <GitHubLogoIcon width={25} height={25} />
+            </a>
           </li>
         </ul>
       </div>

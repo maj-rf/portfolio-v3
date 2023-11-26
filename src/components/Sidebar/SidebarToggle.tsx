@@ -6,7 +6,7 @@ export const SidebarToggle = ({ toggleMenu }: { toggleMenu: () => void }) => {
       onClick={toggleMenu}
       className="rounded-full fixed top-[25px] left-[25px] z-10 w-[30px] h-[30px] outline-none p-0"
     >
-      <svg width="15" height="15" viewBox="0 0 23 23">
+      <svg width="15" height="15" viewBox="0 0 20 20">
         <motion.path
           className="stroke-secondary"
           strokeWidth="3"

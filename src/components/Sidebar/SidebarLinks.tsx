@@ -1,6 +1,6 @@
 import { Variants, motion } from 'framer-motion';
 
-const links = ['Home', 'About', 'Tech Stack', 'Projects'];
+const links = ['Home', 'Tech Stack', 'Projects', 'Other Projects'];
 
 const variants: Variants = {
   open: {

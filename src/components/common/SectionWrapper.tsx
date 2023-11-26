@@ -1,5 +1,5 @@
 'use client';
-import { delay, motion, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 export const SectionWrapper = ({
   id,
@@ -19,7 +19,7 @@ export const SectionWrapper = ({
       animate={isInView && 'animate'}
       transition={{ duration: 0.5 }}
     >
-      <div className="max-w-4xl m-auto px-10 py-14 flex flex-col gap-4">
+      <div className="max-w-4xl m-auto px-10 my-14 flex flex-col gap-4">
         {children}
       </div>
     </motion.section>

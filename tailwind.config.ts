@@ -70,11 +70,28 @@ module.exports = {
           from: { width: 0 },
           to: { width: '100%' },
         },
+        typing: {
+          from: {
+            width: '0',
+          },
+          to: {
+            width: '6ch',
+          },
+        },
+        blink: {
+          from: {
+            'border-right-color': 'transparent',
+          },
+          to: {
+            'border-right-color': 'hsl(var(--primary))',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         strike: 'strike 4s linear',
+        typing: 'typing 2s steps(6), blink 2s infinite',
       },
     },
   },
