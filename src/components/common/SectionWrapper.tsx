@@ -19,7 +19,7 @@ export const SectionWrapper = ({
       animate={isInView && 'animate'}
       transition={{ duration: 0.5 }}
     >
-      <div className="max-w-4xl m-auto px-10 my-14 flex flex-col gap-4">
+      <div className="max-w-4xl m-auto px-6 py-10 flex flex-col gap-4">
         {children}
       </div>
     </motion.section>
