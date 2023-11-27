@@ -14,12 +14,12 @@ type TStack = {
 
 const Stack = ({ heading, subheading, stack }: TStack) => {
   return (
-    <div className="md:col-span-2 flex flex-col gap-4">
+    <div className="md:col-span-2 flex flex-col gap-4 text-center">
       <div>
         <h3 className="font-semibold text-xl">{heading}</h3>
         <p className="text-md text-muted-foreground">{subheading}</p>
       </div>
-      <article className="flex flex-wrap gap-4">
+      <article className="flex flex-wrap gap-4 justify-center">
         {stack.map((tech) => (
           <div
             key={tech.name}
