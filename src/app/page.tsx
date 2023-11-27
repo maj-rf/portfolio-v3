@@ -4,7 +4,7 @@ import { Hero } from '@/components/Hero';
 import { OtherProjects } from '@/components/OtherProjects';
 import { Projects } from '@/components/Projects';
 import { Sidebar } from '@/components/Sidebar/Sidebar';
-import { TechStack } from '@/components/TechStack';
+import { TechStack } from '@/components/TechStack/TechStack';
 
 export default function Home() {
   return (

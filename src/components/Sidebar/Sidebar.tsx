@@ -32,7 +32,7 @@ export const Sidebar = () => {
       animate={open ? 'open' : 'closed'}
     >
       <motion.div
-        className="fixed top-0 left-0 bottom-0 w-full h-[100lvh] sm:w-[300px] bg-primary text-secondary z-10"
+        className="fixed top-[-15px] left-0 bottom-0 w-full h-[100lvh + 15px] sm:w-[300px] bg-primary text-secondary z-10"
         variants={variants}
       >
         <SidebarLinks closeMenu={() => setOpen(false)} />
