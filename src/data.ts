@@ -49,6 +49,15 @@ export const projects: Project[] = [
     repo: 'https://github.com/bananabread08/pretendster',
   },
   {
+    title: 'Fengage Calc',
+    description:
+      'Compute your Stat Growths! Stat Calculator for the Nintendo Switch Game, Fire Emblem Engage',
+    img: engage,
+    tags: ['TypeScript', 'React', 'NextJS', 'TanStack Table'],
+    live: 'https://fengage-calc.vercel.app/',
+    repo: 'https://github.com/bananabread08/fengage-calc',
+  },
+  {
     title: 'Muni',
     description:
       'Full Stack Blogging Web App. Share your thoughts in the platform. Powered by TinyMCE editor.',
@@ -65,15 +74,6 @@ export const projects: Project[] = [
     tags: ['TypeScript', 'React', 'React-router'],
     live: 'https://hyphy.vercel.app/',
     repo: 'https://github.com/bananabread08/hyphy',
-  },
-  {
-    title: 'Fengage Calc',
-    description:
-      'Compute your Stat Growths! Stat Calculator for the Nintendo Switch Game, Fire Emblem Engage',
-    img: engage,
-    tags: ['TypeScript', 'React', 'NextJS', 'TanStack Table'],
-    live: 'https://fengage-calc.vercel.app/',
-    repo: 'https://github.com/bananabread08/fengage-calc',
   },
 ];
 
