@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionWrapper } from './common/SectionWrapper';
+import { SectionWrapper } from '../common/SectionWrapper';
 import { StarIcon } from '@radix-ui/react-icons';
 
 type TRepo = {

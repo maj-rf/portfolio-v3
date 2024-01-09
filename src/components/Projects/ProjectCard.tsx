@@ -6,47 +6,15 @@ import {
   CardDescription,
   CardContent,
   CardFooter,
-} from './ui/card';
+} from '../ui/card';
 import Image from 'next/image';
-import { Button } from './ui/button';
+import { Button } from '../ui/button';
 import { type Project } from '@/data';
 import { GitHubLogoIcon, Link2Icon } from '@radix-ui/react-icons';
-import { useMotionValue, useTransform, motion, useSpring } from 'framer-motion';
 
 export const ProjectCard = ({ project }: { project: Project }) => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const mouseXSpring = useSpring(x);
-  const mouseYSpring = useSpring(y);
-  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ['7deg', '-7deg']);
-  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ['-7deg', '7deg']);
-  const MotionCard = motion(Card);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    const { width, height, left, top } =
-      e.currentTarget.getBoundingClientRect();
-    const mouseX = e.clientX - left;
-    const mouseY = e.clientY - top;
-    const xPct = mouseX / width - 0.5;
-    const yPct = mouseY / height - 0.5;
-
-    x.set(xPct);
-    y.set(yPct);
-  };
-
-  const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
-  };
-
   return (
-    <MotionCard
-      className="overflow-hidden h-full"
-      style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
-      <div onMouseMove={handleMouseMove}></div>
+    <Card className="overflow-hidden h-full flex flex-col">
       <CardContent className="p-0">
         <Image src={project.img} alt={project.title + ' main'} />
       </CardContent>
@@ -87,6 +55,6 @@ export const ProjectCard = ({ project }: { project: Project }) => {
           </a>
         </Button>
       </CardFooter>
-    </MotionCard>
+    </Card>
   );
 };

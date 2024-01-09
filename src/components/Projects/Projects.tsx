@@ -1,6 +1,7 @@
-import { SectionWrapper } from './common/SectionWrapper';
+import { SectionWrapper } from '../common/SectionWrapper';
 import { projects } from '@/data';
 import { ProjectCard } from './ProjectCard';
+import { ProjectCarousel } from './ProjectCarousel';
 
 export const Projects = async () => {
   return (
@@ -10,7 +11,11 @@ export const Projects = async () => {
         Projects
         <span className="animate-typing border-r-4" />
       </h2>
-      <ul className="grid grid-cols-1 md:grid-cols-2 py-4 gap-8">
+      <div className="relative">
+        <ProjectCarousel />
+      </div>
+
+      {/* <ul className="grid grid-cols-1 md:grid-cols-2 py-4 gap-8">
         {projects.map((project) => {
           return (
             <li key={project.title + ' card'}>
@@ -18,7 +23,7 @@ export const Projects = async () => {
             </li>
           );
         })}
-      </ul>
+      </ul> */}
     </SectionWrapper>
   );
 };
