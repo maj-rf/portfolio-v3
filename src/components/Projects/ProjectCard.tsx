@@ -1,5 +1,4 @@
-import { SectionWrapper } from './common/SectionWrapper';
-import { type Project, projects } from '@/data';
+'use client';
 import {
   Card,
   CardHeader,
@@ -7,31 +6,11 @@ import {
   CardDescription,
   CardContent,
   CardFooter,
-} from './ui/card';
+} from '../ui/card';
 import Image from 'next/image';
-import { Button } from './ui/button';
-import { GitHubLogoIcon, Link2Icon, StarIcon } from '@radix-ui/react-icons';
-
-export const Projects = async () => {
-  return (
-    <SectionWrapper id="Projects">
-      <h2 className="font-semibold text-2xl">
-        <span className="bg-primary w-fit text-secondary px-1 rounded-lg border-[3px] border-muted-foreground">{`>_`}</span>{' '}
-        Projects
-        <span className="animate-typing border-r-4" />
-      </h2>
-      <ul className="grid grid-cols-1 md:grid-cols-2 py-4 gap-8">
-        {projects.map((project) => {
-          return (
-            <li key={project.title + ' card'}>
-              <ProjectCard project={project} />
-            </li>
-          );
-        })}
-      </ul>
-    </SectionWrapper>
-  );
-};
+import { Button } from '../ui/button';
+import { type Project } from '@/data';
+import { GitHubLogoIcon, Link2Icon } from '@radix-ui/react-icons';
 
 export const ProjectCard = ({ project }: { project: Project }) => {
   return (
