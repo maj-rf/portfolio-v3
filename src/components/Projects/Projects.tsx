@@ -1,6 +1,4 @@
 import { SectionWrapper } from '../common/SectionWrapper';
-import { projects } from '@/data';
-import { ProjectCard } from './ProjectCard';
 import { ProjectCarousel } from './ProjectCarousel';
 
 export const Projects = async () => {
@@ -11,9 +9,7 @@ export const Projects = async () => {
         Projects
         <span className="animate-typing border-r-4" />
       </h2>
-      <div className="relative">
-        <ProjectCarousel />
-      </div>
+      <ProjectCarousel />
 
       {/* <ul className="grid grid-cols-1 md:grid-cols-2 py-4 gap-8">
         {projects.map((project) => {
