@@ -16,26 +16,26 @@ export const Footer = () => {
             <a
               href="mailto:rmkfermin@gmail.com"
               target="_blank"
-              title="Send email to bananabread08"
+              title="Send email to Maj Fermin"
             >
               <EnvelopeClosedIcon width={25} height={25} />
             </a>
             <a
-              href="https://github.com/bananabread08"
+              href="https://github.com/maj-rf"
               target="_blank"
-              title="Github profile of bananabread08 "
+              title="Github profile of Maj Fermin "
             >
               <GitHubLogoIcon width={25} height={25} />
             </a>
             <a
               href="https://www.linkedin.com/in/ralph-majed-keene-fermin-601575231/"
               target="_blank"
-              title="LinkedIn profile of bananabread08 "
+              title="LinkedIn profile of Maj Fermin "
             >
               <LinkedInLogoIcon width={25} height={25} />
             </a>
           </div>
-          <p className="text-sm flex items-center">{`© ${thisYear}  bananabread08. All rights reserved.`}</p>
+          <p className="text-sm flex items-center">{`© ${thisYear}  maj-rf. All rights reserved.`}</p>
         </div>
       </div>
     </footer>

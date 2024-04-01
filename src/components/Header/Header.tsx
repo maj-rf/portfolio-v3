@@ -14,9 +14,9 @@ export const Header = () => {
           </li>
           <li>
             <a
-              href="https://github.com/bananabread08"
+              href="https://github.com/maj-rf"
               target="_blank"
-              title="Github profile of bananabread08 "
+              title="Github profile of Maj Fermin "
             >
               <GitHubLogoIcon width={25} height={25} />
             </a>

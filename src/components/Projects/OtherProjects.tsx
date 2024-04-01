@@ -17,7 +17,7 @@ type TRepo = {
 
 async function getGithubPinnedRepos() {
   const res = await fetch(
-    'https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=bananabread08'
+    'https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=maj-rf'
   );
   if (!res.ok) throw new Error('Failed to fetch Github repos.');
   return res.json();
@@ -25,6 +25,7 @@ async function getGithubPinnedRepos() {
 
 export const OtherProjects = async () => {
   const data: TRepo[] = await getGithubPinnedRepos();
+  if (!data) return;
   return (
     <SectionWrapper id="Other Projects">
       <h2 className="font-semibold text-2xl">
@@ -47,7 +48,7 @@ export const OtherProjects = async () => {
               >
                 <div className="flex justify-between">
                   <p>{repo.repo}</p>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1">
                     <p>{repo.stars}</p>
                     <StarIcon />
                   </div>
