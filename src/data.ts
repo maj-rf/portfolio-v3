@@ -3,6 +3,7 @@ import engage from './assets/p_fengage.png';
 import hyphy from './assets/p_hyphy.png';
 import muni from './assets/p_muni.png';
 import pretendster from './assets/p_pretendster.png';
+import ulapdrive from './assets/p_ulapdrive.png';
 
 export type Tech = {
   name: string;
@@ -17,10 +18,12 @@ export type Tag =
   | 'Express'
   | 'MongoDB'
   | 'MySQL'
-  | 'Prisma'
+  | 'Prisma ORM'
   | 'TanStack Query'
   | 'TanStack Table'
-  | 'React-router';
+  | 'React-router'
+  | 'PostgreSQL'
+  | 'Drizzle ORM';
 
 export type Project = {
   title: string;
@@ -43,10 +46,33 @@ export const projects: Project[] = [
       'React-router',
       'Express',
       'MongoDB',
-      'Prisma',
+      'Prisma ORM',
     ],
     live: 'https://pretendster-mono.onrender.com/',
-    repo: 'https://github.com/bananabread08/pretendster',
+    repo: 'https://github.com/maj-rf/pretendster',
+  },
+  {
+    title: 'Muni',
+    description:
+      'Full Stack Blogging Web App. Share your thoughts in the platform. Powered by uiw/markdown-editor.',
+    img: muni,
+    tags: [
+      'TypeScript',
+      'React',
+      'TanStack Query',
+      'Express',
+      'PostgreSQL',
+      'Drizzle ORM',
+    ],
+    repo: 'https://github.com/maj-rf/muni',
+  },
+  {
+    title: 'Ulapdrive',
+    description:
+      'A stripped-down version of Dropbox / Google Drive. Share your files privately or publicly!',
+    img: ulapdrive,
+    tags: ['TypeScript', 'React', 'TanStack Query', 'Express', 'MongoDB'],
+    repo: 'https://github.com/maj-rf/muni',
   },
   {
     title: 'Fengage Calc',
@@ -55,16 +81,7 @@ export const projects: Project[] = [
     img: engage,
     tags: ['TypeScript', 'React', 'NextJS', 'TanStack Table'],
     live: 'https://fengage-calc.vercel.app/',
-    repo: 'https://github.com/bananabread08/fengage-calc',
-  },
-  {
-    title: 'Muni',
-    description:
-      'Full Stack Blogging Web App. Share your thoughts in the platform. Powered by TinyMCE editor.',
-    img: muni,
-    tags: ['TypeScript', 'React', 'TanStack Query', 'Express', 'MongoDB'],
-    live: 'https://muni-api.onrender.com/',
-    repo: 'https://github.com/bananabread08/myblog-client',
+    repo: 'https://github.com/maj-rf/fengage-calc',
   },
   {
     title: 'Hyphy',
@@ -73,7 +90,7 @@ export const projects: Project[] = [
     img: hyphy,
     tags: ['TypeScript', 'React', 'React-router'],
     live: 'https://hyphy.vercel.app/',
-    repo: 'https://github.com/bananabread08/hyphy',
+    repo: 'https://github.com/maj-rf/hyphy',
   },
 ];
 
@@ -82,14 +99,13 @@ export const frontend: Tech[] = [
   { name: 'TypeScript', src: '/assets/typescript.svg' },
   { name: 'React', src: '/assets/react.svg' },
   { name: 'NextJS', src: '/assets/nextjs.svg' },
-  { name: 'Sass', src: '/assets/sass.svg' },
   { name: 'Tailwind', src: '/assets/tailwindcss.svg' },
 ];
 export const backend: Tech[] = [
   { name: 'Node.JS', src: '/assets/nodejs.svg' },
-  { name: 'Firebase', src: '/assets/firebase.svg' },
   { name: 'Express', src: '/assets/express.svg' },
+  { name: 'PostgreSQL', src: '/assets/postgres.svg' },
+  { name: 'Drizzle ORM', src: '/assets/drizzle.png' },
+  { name: 'Prisma ORM', src: '/assets/prisma.svg' },
   { name: 'MongoDB', src: '/assets/mongodb.svg' },
-  { name: 'MySQL', src: '/assets/mysql.svg' },
-  { name: 'Prisma', src: '/assets/prisma.svg' },
 ];

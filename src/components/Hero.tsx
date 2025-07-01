@@ -36,7 +36,10 @@ export const Hero = () => {
             TypeScript, React, Node.JS
           </span>
           , and{' '}
-          <span className="text-highlight font-semibold">MySQL / NoSQL</span>.
+          <span className="text-highlight font-semibold">
+            PostgreSQL / NoSQL
+          </span>
+          .
         </p>
         <p>
           I like playing games especially JRPGs which is instrumental to my

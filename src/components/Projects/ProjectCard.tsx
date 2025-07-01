@@ -19,12 +19,12 @@ export const ProjectCard = ({ project }: { project: Project }) => {
         <Image src={project.img} alt={project.title + ' main'} />
       </CardContent>
       <CardHeader className="flex flex-col gap-2">
-        <CardTitle>{project.title}</CardTitle>
+        <CardTitle className="uppercase text-lg">{project.title}</CardTitle>
         <ul className="flex flex-wrap gap-2 text-sm uppercase">
           {project.tags.map((tag) => (
             <li
               key={`${project.title} ${tag}`}
-              className="bg-highlight px-2 rounded-lg font-semibold text-black"
+              className="bg-highlight px-2 rounded-lg font-semibold text-primary-foreground"
             >
               {tag}
             </li>
